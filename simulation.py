@@ -314,8 +314,7 @@ class Simulation:
                 caractere: {
                     param: tkinter.IntVar(value=value) if DIC_CARACTERES_INDIVIDU[caractere][PARAM_TYPE] == int
                     else (tkinter.BooleanVar(value=value)
-                          if DIC_CARACTERES_INDIVIDU[caractere][PARAM_TYPE] == bool
-                          else tkinter.DoubleVar(value=value))
+                          if param == PARAM_ALEATOIRE else tkinter.DoubleVar(value=value))
                     for param, value in dic_params.items()}
                 for caractere, dic_params in self.tk_valeurs_caracteres_individus.items()}
 
