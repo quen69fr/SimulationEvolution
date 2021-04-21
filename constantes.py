@@ -160,7 +160,7 @@ DIC_CONFIGURATIONS = {
         PARAM_MIN_VALUE: 2,
         PARAM_MAX_VALUE: 1000,
         PARAM_STEP: 2,
-        PARAM_LABEL: "Nombre d'étape d'évolution de la carte",
+        PARAM_LABEL: "Nombre d'étapes d'évolution de la carte",
         PARAM_TYPE: int
     },
     COEF_ENERGIE_DEPENSEE_GAUCHE: {
@@ -168,7 +168,7 @@ DIC_CONFIGURATIONS = {
         PARAM_MIN_VALUE: 1.,
         PARAM_MAX_VALUE: 10.,
         PARAM_STEP: 0.1,
-        PARAM_LABEL: "Cout en énergie à gauche",
+        PARAM_LABEL: "Coût en énergie à gauche",
         PARAM_TYPE: float
     },
     COEF_ENERGIE_DEPENSEE_DROITE: {
@@ -176,7 +176,7 @@ DIC_CONFIGURATIONS = {
         PARAM_MIN_VALUE: 1.,
         PARAM_MAX_VALUE: 20.,
         PARAM_STEP: 0.1,
-        PARAM_LABEL: "Cout en énergie à droite",
+        PARAM_LABEL: "Coût en énergie à droite",
         PARAM_TYPE: float
     },
     ALTITUDE_MAX: {
@@ -304,7 +304,7 @@ DIC_CONFIGURATIONS = {
         PARAM_MIN_VALUE: 0,
         PARAM_MAX_VALUE: 1,
         PARAM_STEP: 0.05,
-        PARAM_LABEL: "Fréquence changement mouvement carte",
+        PARAM_LABEL: "Fréquence changements mouvement carte",
         PARAM_TYPE: float
     },
     LARGEUR_ENVIRONNEMENT: {
@@ -344,7 +344,7 @@ DIC_CONFIGURATIONS = {
         PARAM_MIN_VALUE: 0,
         PARAM_MAX_VALUE: 5,
         PARAM_STEP: 0.5,
-        PARAM_LABEL: "Poids vitesse énergie dépensée",
+        PARAM_LABEL: "Poids vitesse sur énergie dépensée",
         PARAM_TYPE: float
     },
     POIDS_RAYON_ENERGIE_DEPENSEE: {
@@ -352,7 +352,7 @@ DIC_CONFIGURATIONS = {
         PARAM_MIN_VALUE: 0,
         PARAM_MAX_VALUE: 5,
         PARAM_STEP: 0.5,
-        PARAM_LABEL: "Poids taille énergie dépensée",
+        PARAM_LABEL: "Poids taille sur énergie dépensée",
         PARAM_TYPE: float
     },
     COEF_PETIT_MANGE_GROS: {
@@ -409,7 +409,7 @@ DIC_CONFIGURATIONS = {
         PARAM_MIN_VALUE: 2,
         PARAM_MAX_VALUE: 50,
         PARAM_STEP: 1,
-        PARAM_LABEL: "Sensibilité déplacement",
+        PARAM_LABEL: "Sensibilité de déplacement",
         PARAM_TYPE: int
     },
     CARTE_MARGE_BORD_DEPLACEMENT: {
@@ -520,7 +520,7 @@ DIC_CARACTERES_INDIVIDU = {
         PARAM_MIN_VALUE: 20,
         PARAM_MAX_VALUE: 450,
         PARAM_STEP: 5,
-        PARAM_LABEL: "Coup de reproduction",
+        PARAM_LABEL: "Coût de reproduction",
         PARAM_TYPE: float,
         PARAM_PROBA_MUTATION_DEFAULT: 0.1,
         PARAM_DEGRE_MUTATION_DEFAULT: 5,
@@ -545,7 +545,7 @@ DIC_CARACTERES_INDIVIDU = {
     },
 
     AGE: {
-        PARAM_LABEL: "Age (en jours)"
+        PARAM_LABEL: "Âge (en jours)"
     },
     ENERGIE_DEPENSEE: {
         PARAM_LABEL: "Energie dépensée"
@@ -630,7 +630,7 @@ DIC_LABEL_FRAME_CONFIGURATIONS = {
                              NB_NOURRITURES_INIT]
     },
     FRAME_AVANCEES_CARTE: {
-        PARAM_TITRE: "Carte général",
+        PARAM_TITRE: "Carte générale",
         PARAM_LISTE_CONFIG: [LARGEUR_ENVIRONNEMENT,
                              HAUTEUR_ENVIRONNEMENT,
                              NB_UPDATE_CARTE_INIT,
@@ -712,7 +712,7 @@ DIC_SCALE = {
         PARAM_MIN_VALUE: 0,
         PARAM_MAX_VALUE: 0.2,
         PARAM_STEP: 0.002,
-        PARAM_LABEL: "Delay minimum (vitesse smulation)"
+        PARAM_LABEL: "Délai minimum (vitesse simulation)"
     },
     SCALE_PYGAME_FPS: {
         PARAM_DEFAULT_VALUE: 20,
@@ -740,7 +740,7 @@ DIC_SCALE = {
         PARAM_MIN_VALUE: 1,
         PARAM_MAX_VALUE: 40,
         PARAM_STEP: 1,
-        PARAM_LABEL: "Période prises en jours"
+        PARAM_LABEL: "Période prise en jours"
     },
     SCALE_MATPLOTLIB_3D_VITESSE_ROTATION: {
         PARAM_DEFAULT_VALUE: 0,
@@ -779,7 +779,7 @@ TK_MESSAGE_BOX_QUITTER = ("Fermer le programme ?",
                           "Êtes vous sûr de vouloir quitter ?")
 TK_MESSAGE_BOX_ENREGISTEMENT = ("Abandonner l'enregistrement ?",
                                 "Êtes vous sûr de vouloir arrêter cet enregistrement ?\n"
-                                "Toutes les images seront suprimées !",)
+                                "Toutes les images seront supprimées !",)
 
 TK_CAPTION_TEXT = "Gestion : Simulation et évolution"
 
@@ -821,7 +821,7 @@ TK_CHECKBUTTON_KEEP_CONF = "Garder ces configurations"
 TK_CHECKBUTTON_ENR_KEEP_IMAGES = "Garder les images"
 TK_LABEL_VIDEO_SAVING = "La vidéo est en train de s'enregistrer :\n\n"
 TK_LABEL_MOVIEPY_NB_IMAGES = "Nombre d'images : "
-TK_LABEL_MOVIEPY_DUREE_ENREGISTREMENT = "Durée de l'enrgistrement : ", " sec"
+TK_LABEL_MOVIEPY_DUREE_ENREGISTREMENT = "Durée de l'enregistrement : ", " sec"
 TK_CHECKBUTTON_MOVIEPY_AFFICHER_MINIATURE = "Afficher la miniature"
 
 
@@ -895,7 +895,7 @@ MATPLOTLIB_LEGENDE_EVOLUTION_POPULATION_TITLE = ["Nombre de naissances",
                                                  "Nombre d'individus morts"]
 MATPLOTLIB_LEGENDE_AXES_EVOLUTION_POPULATION = ["Nombre de jours", "Nombre d'individus"]
 MATPLOTLIB_LEGENDE_GRAPH_3D = ["Individus non féconds",
-                               "Nouveaux individus (naissance)",
+                               "Nouveaux individus (naissances)",
                                "Individus féconds",
                                "Individus gestants"]
 MATPLOTLIB_POSITION_LEGENDE_EVOLUTION_POPULATION = "upper left"
