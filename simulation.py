@@ -312,7 +312,8 @@ class Simulation:
         if configs_caracteres:
             dic_tkvar_caractere = {
                 caractere: {
-                    param: tkinter.IntVar(value=value) if DIC_CARACTERES_INDIVIDU[caractere][PARAM_TYPE] == int
+                    param: tkinter.IntVar(value=value) if (DIC_CARACTERES_INDIVIDU[caractere][PARAM_TYPE] == int
+                                                           and not param == PARAM_PROBA_MUTATION)
                     else (tkinter.BooleanVar(value=value)
                           if param == PARAM_ALEATOIRE else tkinter.DoubleVar(value=value))
                     for param, value in dic_params.items()}
@@ -914,6 +915,7 @@ class Simulation:
             self.tk_var_stop_init_new_environnement = None
             if environnement.init_terminee:
                 self.environnement = environnement
+                self.chemin_videos = ""
             self.stop_enregistrement.set(False)
             self.tk_buttons_simulation[START_BUTTON].config(text=TK_START_BUTTON_TEXT, state="normal")
             self.tk_buttons_simulation[STOP_BUTTON]["state"] = "disabled"

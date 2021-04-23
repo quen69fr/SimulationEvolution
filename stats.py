@@ -135,7 +135,7 @@ class Stats:
                 dic_fig[PARAM_MATPLOTLIB_TK_VAR_NB_JOURS].set(num_jour)
 
     def init_graph_matplotlib(self, caractere_3D, vitesse_rotate, hauteur_z):
-        self.id_axs += 1
+        Stats.id_axs += 1
         if caractere_3D is not None:
             self.init_graph_matplotlib_caracteres_population(self.id_axs, caractere_3D, vitesse_rotate, hauteur_z)
         else:

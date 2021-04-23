@@ -746,7 +746,7 @@ DIC_SCALE = {
         PARAM_DEFAULT_VALUE: 0,
         PARAM_MIN_VALUE: 0,
         PARAM_MAX_VALUE: 4,
-        PARAM_STEP: 0.05,
+        PARAM_STEP: 0.01,
         PARAM_LABEL: "Vitesse de rotation de la caméra"
     },
     SCALE_MATPLOTLIB_3D_HAUTEUR_Z: {
